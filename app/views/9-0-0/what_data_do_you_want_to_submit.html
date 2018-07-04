@@ -9,7 +9,8 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
+    <div class="govuk-grid-column-two-thirds">
+		
 		<div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -19,19 +20,19 @@
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-1" name="what-to-submit" type="radio" value="ILR">
+        <input class="govuk-radios__input" id="what-to-submit-1" name="whattosubmit" type="radio"  value="ilr">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-1">
         Individualised learner records (ILR) 
       </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-2" name="what-to-submit" type="radio" value="EAS">
+        <input class="govuk-radios__input" id="what-to-submit-2" name="whattosubmit" type="radio" value="eas">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-2">
         Earnings Adjustment statements (EAS) 
       </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-3" name="what-to-submit" type="radio" value="ESF">
+        <input class="govuk-radios__input" id="what-to-submit-3" name="whattosubmit" type="radio" value="esf">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-3">
        European Social Fund (ESF) supplementary data
       </label>
@@ -39,8 +40,10 @@
     </div>	 
   </fieldset>			 
 </div>
-<p><a href="#" type="submit" class="govuk-button">Continue</a></p>
-		  
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+
     </div>
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}

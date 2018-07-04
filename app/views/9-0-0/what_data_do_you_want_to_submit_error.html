@@ -10,6 +10,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+		<form>
 		<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
   <h2 class="govuk-error-summary__title" id="error-summary-title">
     There are errors on this page that need your attention
@@ -22,7 +23,9 @@
     </ul>
   </div>
 </div>
+		
 		<div class="govuk-form-group govuk-form-group--error">
+		
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
@@ -32,21 +35,22 @@
     Choose an option from the list
   </span>
     </legend>
+	  
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-1" name="what-to-submit" type="radio" value="ILR">
+        <input class="govuk-radios__input" id="what-to-submit-1" name="whattosubmit" type="radio" value="ILR">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-1">
         Individualised learner records (ILR) 
       </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-2" name="what-to-submit" type="radio" value="EAS">
+        <input class="govuk-radios__input" id="what-to-submit-2" name="whattosubmit" type="radio" value="EAS">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-2">
         Earnings Adjustment statements (EAS) 
       </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="what-to-submit-3" name="what-to-submit" type="radio" value="ESF">
+        <input class="govuk-radios__input" id="what-to-submit-3" name="whattosubmit" type="radio" value="ESF">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-3">
        European Social Fund (ESF) supplementary data
       </label>
@@ -54,12 +58,17 @@
     </div>	 
   </fieldset>			 
 </div>
-<p><a href="#" type="submit" class="govuk-button">Continue</a></p>
-		  
+<button id="submit" type="submit" class="govuk-button">
+  Continue
+</button>
+				 
+		</form>
     </div>
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}
       </div>
 </div>
+
+
 
 {% endblock %}
