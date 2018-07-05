@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<div class="govuk-panel govuk-panel--confirmation">
+          <h2 class="govuk-panel__title">
+            ILR File Submitted
+          </h2>
+          <div class="govuk-panel__body">
+			  Return Period 6 (R06)
+           
+          </div>
+        </div>
+
+<p>Reference number: <span class="govuk-!-font-weight-bold">123456789</span></p>		
+<p>File name: <span class="govuk-!-font-weight-bold">myfile.xml</span></p>
+<p>Submitted by: <span class="govuk-!-font-weight-bold">Norma Jones</span></p>
+<p>Time: <span class="govuk-!-font-weight-bold">4 July 2018 at 3:13pm</span></p> 
+
+<h3 class="govuk-heading-m">What happens next?</h3>
+		<p>We’ll process your file - this will take about 30 minutes. Once it’s done you’ll be able to:</p>
+		<ul class="govuk-list govuk-list--bullet">
+			<li>View the funding breakdown for R06</li>
+			<li>Download related reports</li>
+		</ul>
+		<p>When we’ve finished processing your file we’ll send an email to:</p>
+
+<div class="govuk-inset-text">
+  ilr_team@college.ac.uk
+
+</div>
+		<p><a href="./what_data_do_you_want_to_submit.html">Submit another data return</a>.</p>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}

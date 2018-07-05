@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">There’s a problem</h1>
+
+		<p><span class="govuk-!-font-weight-bold">Total learners in file</span> = 3,893</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total errors</span> = 0 (affecting 0 learners) <a href="#">Find out more</a></p>
+
+		<p><span class="govuk-!-font-weight-bold">Total warnings</span> = 2,291 (affecting 1,027 learners) <a href="#">Find out more</a></p>
+
+		<p><a href="#">Download the ILR submission rule violation summary report</a> (PDF, 375KB) for more details.
+</p>
+		<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    It’s important that you review all errors and warnings. Any mistakes in your data may lead to you not being paid the correct amount.
+  </strong>
+</div>
+		<a href="./submit_data.html" type="submit" class="govuk-button">
+  Save and continue
+</a>
+		<p><a href="./choose_file_to_upload.html">Go back and upload a different file</a></p>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}
