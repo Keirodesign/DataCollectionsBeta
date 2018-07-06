@@ -10,9 +10,23 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-		<h1 class="govuk-heading-xl">There’s a problem</h1>
+		<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There are problems with the learner details in your file
+  </h2>
+  <div class="govuk-error-summary__body">
+	  <p>Any problems may mean you’re not paid the correct amount for this period.</p>
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#error">View problems found</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+		<h1 class="govuk-heading-xl">There’s a problem <span class="govuk-caption-xl">Return Period 6 (R06)</span></h1>
 
-		<p><span class="govuk-!-font-weight-bold">Total learners in file</span> = 3,893</p>
+		<p id="error"><span class="govuk-!-font-weight-bold">Total learners in file</span> = 3,893</p>
 
 		<p><span class="govuk-!-font-weight-bold">Total errors</span> = 0 (affecting 0 learners) <a href="#">Find out more</a></p>
 
@@ -20,17 +34,11 @@
 
 		<p><a href="#">Download the ILR submission rule violation summary report</a> (PDF, 375KB) for more details.
 </p>
-		<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    It’s important that you review all errors and warnings. Any mistakes in your data may lead to you not being paid the correct amount.
-  </strong>
-</div>
+		
 		<a href="./submit_data.html" type="submit" class="govuk-button">
-  Save and continue
+  Continue anyway
 </a>
-		<p><a href="./choose_file_to_upload.html">Go back and upload a different file</a></p>
+		<p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>
     </div>
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}
