@@ -9,9 +9,19 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-		<h1 class="govuk-heading-xl">Your file’s uploading</h1>
-		<p><progress value="22" max="100"></progress></p>
+    <div class="govuk-grid-column-two-thirds">		
+		<div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+  <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
+    Your file’s uploading
+  </h2>
+  <div class="govuk-highlight-summary__body">
+	  <p>ILR-file-submission-March-2018.xml</p>
+	  <p>22% uploaded</p>
+   <p><progress value="22" max="100"></progress></p>
+	  <p><a href="#">Cancel</a></p>
+  </div>
+</div>
+		
 
 		<a href="./theres_a_problem.html" type="submit" class="govuk-button">
   Continue
