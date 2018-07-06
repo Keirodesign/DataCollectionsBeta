@@ -11,6 +11,12 @@ $(document).ready(function () {
 
 
 //Prototype hacks
+
+//Quick JS go back - users need to be able to go back to previous page
+
+function goBack() {
+    window.history.back();
+}
     
 
       
