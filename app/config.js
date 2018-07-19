@@ -7,7 +7,7 @@ module.exports = {
   serviceName: 'Submit learner data',
 
   // Default port that prototype runs on
-  port: '3000',
+  port: '6000',
 
   // Enable or disable password protection on production
   useAuth: 'true',
