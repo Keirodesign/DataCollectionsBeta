@@ -1,6 +1,9 @@
 
 {% extends "layout.html" %}
 
+{% block beforeContent %}
+  {% include "./includes/back_choose_file_to_upload.html" %}
+{% endblock %}
 
 {% block pageTitle %}
   Data Collections Transformation Prototype
@@ -26,20 +29,19 @@
 </div>
 		<h1 class="govuk-heading-xl">There’s a problem <span class="govuk-caption-xl">Return Period 6 (R06)</span></h1>
 
-		<p id="error"><span class="govuk-!-font-weight-bold">Total learners in file</span> = 3,893</p>
+		<p id="error"><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893</p>
 
-		<p><span class="govuk-!-font-weight-bold">Total errors</span> = 0 (affecting 0 learners) <a href="#">Find out more</a></p>
+		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 0 (affecting 0 learners) <a href="#">Find out more</a></p>
 
-		<p><span class="govuk-!-font-weight-bold">Total warnings</span> = 2,291 (affecting 1,027 learners) <a href="#">Find out more</a></p>
+		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 2,291 (affecting 1,027 learners) <a href="#">Find out more</a></p>
 
-		<p><a href="#">Download summary report </a> (PDF, 375KB)
-</p>
-		<p><a href="#">Download the ILR rule violation summary report </a> (CSV, 78KB)
-</p>
+		<p><a href="#">Download summary report </a> (PDF, 375KB)</p>
+		<p><a href="#">Download detailed report </a> (CSV, 78KB) showing all errors and warnings</p>
 		
 		<a href="./ilr_data_submitted.html" type="submit" class="govuk-button">
-  Submit anyway
-</a>
+      Submit anyway
+    </a>
+
 		<p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>
     </div>
 	  <div class="govuk-grid-column-one-third">
