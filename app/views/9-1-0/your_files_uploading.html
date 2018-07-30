@@ -15,7 +15,7 @@
     Your file’s uploading
   </h2>
   <div class="govuk-highlight-summary__body">
-	  <p>ILR-file-submission-March-2018.xml</p>
+	  <p>{{ uploadingFile }}</p>
 	  <p>22% uploaded</p>
    <p><progress value="22" max="100"></progress></p>
 	  <p><a href="#">Cancel</a></p>
@@ -23,7 +23,8 @@
 </div>
 		
 
-		<a href="./theres_a_problem.html" type="submit" class="govuk-button">
+<!--<a href="./theres_a_problem.html" type="submit" class="govuk-button">-->
+<a href={{continueTo}} type="submit" class="govuk-button">
   Continue
 </a>
 
