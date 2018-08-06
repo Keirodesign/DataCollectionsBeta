@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">Individualised Learner Record (ILR) submissions</h1>
+		<h2 class="govuk-heading-l">Return Period 6 (R06)</h2>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l">
+  <span class="govuk-caption-l">R06 funding</span> £10,733
+</h2>
+  </div>
+	 <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l">
+  <span class="govuk-caption-l">Learners
+</span> 3,893
+</h2>
+  </div>
+</div>
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Funding breakdown</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Category</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">16-19 (excluding Apprenticeships)</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric ">£2,469</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Other 16-19</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£4,508</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Adult skills</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£1,342</td>
+    </tr>
+	   <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Community Learning</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£429</td>
+    </tr>
+	   <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">ESF</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£268</td>
+    </tr>
+	   <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Other Adult</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+    </tr>
+	   <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Apprenticeships from 1 May 2017
+(or available for non-funded learning aims)
+</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£1,717</td>
+    </tr>
+	     <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-body-l" scope="row">Total
+</th>
+      <td class="govuk-table__cell govuk-body-l">£10,733</td>
+    </tr>
+  </tbody>
+</table>
+		<p><a href="#">Download all your reports</a> (Zip, 1.3MB) for this return period.
+</p>
+				<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+     Problems with the figures?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+	  You can <a href="./choose_file_to_upload.html">re-submit your file</a> or contact us to let us know.
+
+  </div>
+</details>
+		<nav aria-label="Pagination" class="pagination form-group"
+                role="navigation">
+                    <ul class="list">
+                        <li class="previous">
+                            <a href="#" rel="prev" title=
+                            "Navigate to previous return"><span class=
+                            "pagination-label">Previous return</span><span class=
+                            "pagination-part-title">RO5</span></a>
+                        </li>
+                        <li class="next visually-hidden">
+                            <a href="#" rel="next" title=
+                            "Navigate to next page"><span class=
+                            "pagination-label">Next return</span><span class=
+                            "pagination-part-title">RO7</span></a>
+                        </li>
+                    </ul>
+                </nav>
+		
+
+		
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}
