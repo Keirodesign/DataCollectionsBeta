@@ -1,0 +1,84 @@
+
+{% extends "layout_noback.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		
+      	<h1 class="govuk-heading-xl">
+        	Contents <span class="govuk-caption-xl">Version 9.3.1</span>       
+      	</h1>
+      	<p>
+        	Please do not enter any personal information. This prototype is not secure.
+      	</p>
+
+		<h2 class="govuk-heading-l">ILR User Journey (Happy Path)</h2>
+		
+		<ul class="govuk-list govuk-list--number">
+			<li><a href="start.html">Start page</a></li>
+		  	<li><a href="idams.html">IDAMS</a></li>
+		   	<li><a href="what_data_do_you_want_to_submit.html">What data do you want to submit?</a></li>
+			<li><a href="choose_file_to_upload.html">Choose file to upload</a></li>
+			<li><a href="your_files_uploading.html">Your file's uploading (wip)</a></li>
+			<li><a href="theres_a_problem.html">There's a problem</a></li>
+			<li><a href="no_problems_found.html">No problems found</a></li>
+			<li><a href="ilr_data_submitted.html">ILR data submitted</a></li>
+			<li><a href="return-period.html">Return period</a></li>
+		</ul>
+
+
+		<h2 class="govuk-heading-l">EAS</h2>
+
+		<form id="myForm" action="screenshotview" method="get" class="form">
+			<input type="hidden" name="number" value="" id="number" />
+			<div class="govuk-form-group">
+				<ul class="govuk-list govuk-list--number">
+					<li><a href="#" onclick="document.getElementById('number').value = 1; document.getElementById('myForm').submit()">Manage EAS</a></li>
+					<li><a href="#" onclick="document.getElementById('number').value = 2; document.getElementById('myForm').submit()">Choose programme</a></li>
+					<li><a href="#" onclick="document.getElementById('number').value = 3; document.getElementById('myForm').submit()">Add claim details</a></li>
+					<li><a href="#" onclick="document.getElementById('number').value = 4; document.getElementById('myForm').submit()">Add claim details - complete</a></li>
+					<li><a href="#" onclick="document.getElementById('number').value = 5; document.getElementById('myForm').submit()">Manage EAS - updated</a></li>
+				</ul>
+			</div>
+		</form>
+
+		<h2 class="govuk-heading-l">ESF User Journey (Happy Path)</h2>
+		
+		<ul class="govuk-list govuk-list--number">
+			<li><a href="start.html">Start page</a></li>
+		  	<li><a href="idams.html">IDAMS</a></li>
+		   	<li><a href="what_data_do_you_want_to_submit.html">What data do you want to submit?</a></li>
+			<li><a href="esf_choose_file_to_upload.html">Choose file to upload</a></li>
+			<li><a href="your_files_uploading.html">Your file's uploading (wip)</a></li>
+			<li><a href="esf_data_submitted.html">ESF data submitted</a></li>
+			<li><a href="return-period.html">Return period</a></li>
+		</ul>
+
+		<h2 class="govuk-heading-l">Error states and fails</h2>
+		
+		<ul class="govuk-list govuk-list--number">	
+			<li><a href="what_data_do_you_want_to_submit_error.html">What data do you want to submit? (error state)</a></li>
+			<li><a href="choose_file_to_upload_error_1.html">Choose file to upload (error state 1)</a></li>
+			<li><a href="choose_file_to_upload_error_2.html">Choose file to upload (error state 2)</a></li>
+			<li><a href="upload_file_failed.html">File upload failed</a></li>
+			<li><a href="submit_data_error_1.html">Submit data (error state 1)</a></li>
+			<!--<li><a href="submit_data_error_2.html">Submit data (error state 2)</a></li>-->
+			
+		</ul> 
+		
+		<h2 class="govuk-heading-l">Service pages</h2>
+		
+		<ul class="govuk-list govuk-list--number">	
+			<li><a href="problem_with_the_service.html">Sorry, there’s a problem with the service</a></li>
+			
+		</ul>
+    </div>
+</div>
+
+{% endblock %}
