@@ -12,7 +12,8 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 @import "components/button";
-@import "components/success-summary";
+@import "components/summary-variants";
+@import "components/table";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
