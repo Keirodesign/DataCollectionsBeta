@@ -27,14 +27,7 @@
 				font-size: 27px;
 				font-weight: bold;
 				color: $govuk-secondary-text-colour;
-			}
-
-			&:before {
-				content: "£";
-				font-size: 27px;
-				font-weight: bold;
-				color: $govuk-secondary-text-colour;
-
+				text-align: right;
 			}
 		}
    	}
