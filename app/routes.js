@@ -147,5 +147,36 @@ router.get('/9-3-2/eas_month_view', function (req, res) {
   res.render('9-3-2/eas_month_view', { 'monthselected': easmonthselected})
 })
 
+// --------------------------  Iteration KitKat-9-4-0  -------------------------------------------------------------- 
+
+router.get('/KitKat-9-4-0/choose_file_to_upload', function (req, res) {
+  // Get the answer from the query string (eg. ?whattosubmit=ilr)
+  var whattosubmit = req.query.whattosubmit
+  if (whattosubmit === 'esf') {
+    res.redirect('esf_choose_file_to_upload')
+  } else {
+      if (whattosubmit === 'eas') {
+        res.redirect('eas_choose_file_to_upload')
+      }
+      if (whattosubmit === 'reports') {
+        res.redirect('reports')
+      } else {
+        res.render('KitKat-9-4-0/choose_file_to_upload')
+      }
+  } 
+})
+
+router.get('/KitKat-9-4-0/your_files_uploading', function (req, res) {
+  var whattosubmit = req.query.whattosubmit
+  if (whattosubmit === 'esf') {
+    res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'SUPPDATA-12345678-ESF-8976-20180806-151209.CSV', 'continueTo': './esf_data_submitted.html' })
+  }
+    if (whattosubmit === 'eas') {
+    res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'EAS-12345678-8976-20180806-151209.CSV', 'continueTo': './eas_data_submitted.html' })
+  } else {
+    res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'ILR-12345678-1819-20180806-151209-02.XML', 'continueTo': './theres_a_problem.html' })
+  }
+})
+
 
 module.exports = router
