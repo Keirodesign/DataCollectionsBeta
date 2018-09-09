@@ -1,0 +1,40 @@
+
+{% extends "./layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">		
+		
+  <h1 class="govuk-heading-xl">
+    Useful tools
+  </h1>
+        <ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">18/19 ILR Learner Entry Tool (V1)</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Funding information system (FIS)</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Learning aims</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Learner record service</a>
+  </li>
+</ul>
+  
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+
+</div>
+
+{% endblock %}
