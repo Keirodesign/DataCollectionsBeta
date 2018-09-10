@@ -173,11 +173,13 @@ router.get('/KitKat-9-4-0/your_files_uploading', function (req, res) {
   if (whattosubmit === 'esf') {
     res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'SUPPDATA-12345678-ESF-8976-20180806-151209.CSV', 'continueTo': './esf_data_submitted.html' })
   }
+    else {
     if (whattosubmit === 'eas') {
     res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'EAS-12345678-8976-20180806-151209.CSV', 'continueTo': './eas_data_submitted.html' })
   } else {
     res.render('KitKat-9-4-0/your_files_uploading', { 'uploadingFile': 'ILR-12345678-1819-20180806-151209-02.XML', 'continueTo': './theres_a_problem.html' })
   }
+    }
 })
 
 
