@@ -9,21 +9,26 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">		
-		
-  <h2 class="govuk-heading-xl">
+    <div class="govuk-grid-column-two-thirds">
+        
+        		<div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+  <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
     Your file’s uploading
   </h2>
-  
+  <div class="govuk-highlight-summary__body">
 	  <p>{{ uploadingFile }}</p>
-	  <p><img src="/public/images/spinner-gif-13.gif"/></p>
+	  <p>80% uploaded</p>
+   <p><progress value="80" max="100"></progress></p>
+	  <p><a href="#">Cancel</a></p>
+  </div>
+</div>
         
         <script type="text/javascript">   
     function Redirect() 
     {  
         window.location="{{continueTo}}"; 
     } 
-    setTimeout('Redirect()', 3000);   
+    setTimeout('Redirect()', 5000);   
 </script>
   
 
