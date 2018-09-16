@@ -17,8 +17,7 @@
 	  <h1 class="govuk-heading-xl">Choose file to upload <span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
 		<p>Before uploading your file you should make sure that:</p>
 		<ul class="govuk-list govuk-list--bullet">
-      <li>it’s in a CSV format</li>
-      <li>it’s using the <a href="#">ESF non-ILR data return template</a></li>
+      <li>it’s in an XML or Zip format</li>
 			<li>the data it contains is as complete as possible</li>
 			<li>the data it contains is as accurate as possible</li>
 		</ul>
@@ -27,16 +26,17 @@
         Upload a file
       </label>
       <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-      <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">          
+      <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">
     </div>
-    <button class="govuk-button">
+	
+		<button class="govuk-button">
       Upload file
     </button>
   </form>
   </div>
 
   <div class="govuk-grid-column-one-third">
-    {% include "./includes/sidebar_help_related_ESFA.html" %}
+    {% include "./includes/sidebar_help_related.html" %}
   </div>
 </div>
 
