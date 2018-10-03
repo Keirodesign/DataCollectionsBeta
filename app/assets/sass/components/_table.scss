@@ -12,6 +12,10 @@
    	vertical-align: top;
    	width: 20%;
    	padding-left: 10px;
+
+   	&:last-child {
+    	padding-right: 20px;
+	}
 }
 
 .govuk-table--noinputborders {
@@ -27,14 +31,7 @@
 				font-size: 27px;
 				font-weight: bold;
 				color: $govuk-secondary-text-colour;
-			}
-
-			&:before {
-				content: "£";
-				font-size: 27px;
-				font-weight: bold;
-				color: $govuk-secondary-text-colour;
-
+				text-align: right;
 			}
 		}
    	}
