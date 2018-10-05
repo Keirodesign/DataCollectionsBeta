@@ -1,0 +1,56 @@
+
+{% extends "./layout.html" %}
+
+{% block beforeContent %}
+  {% include "./includes/back_what_data_do_you_want_to_submit.html" %}
+{% endblock %}
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">      
+            <div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+  <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
+    Levy contracted apprenticeship payments
+  </h2>
+  <div class="govuk-highlight-summary__body">
+	  <p>To be paid, there must be a matching, fully approved record already in the apprenticeship service.</p>
+      <p><a href="#">Find out more</a></p>
+  </div>
+</div>
+    <form action="your_files_uploading" method="get" class="form">
+	  <h1 class="govuk-heading-xl">Choose file to upload <span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
+		<p>Before uploading your file you should make sure that:</p>
+		<ul class="govuk-list govuk-list--bullet">
+      <li>it’s in a CSV format</li>
+      <li>it’s using the <a href="#">ESF non-ILR data return template</a></li>
+			<li>the data it contains is as complete as possible</li>
+			<li>the data it contains is as accurate as possible</li>
+		</ul>
+	  <div class="govuk-form-group">
+      <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+        Upload a files
+      </label>
+          <span id="upload-hint" class="govuk-hint">
+      You can upload more than one file at a time
+    </span>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">
+           </div>     
+         
+    <p><a href="your_files_uploading_esf.html" class="govuk-button">
+      Upload file
+        </a></p>
+  </form>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    {% include "./includes/sidebar_help_related_ESFA.html" %}
+  </div>
+</div>
+
+{% endblock %}
