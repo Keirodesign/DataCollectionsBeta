@@ -378,7 +378,7 @@ router.get('/KitKat-9-4-2/your_files_uploading', function (req, res) {
 
 // --------------------------  Iteration Caramac 10-0-0  -------------------------------------------------------------- 
 
-router.get('/10-0-0/choose_file_to_upload', function (req, res) {
+router.get('/10-0-0/choose_period', function (req, res) {
   // Get the answer from the query string (eg. ?whattosubmit=ilr)
   var whattosubmit = req.query.whattosubmit
   if (whattosubmit === 'reports') {
@@ -391,7 +391,7 @@ router.get('/10-0-0/choose_file_to_upload', function (req, res) {
       if (whattosubmit === 'eas') {
         res.redirect('eas_choose_file_to_upload')
       } else {
-        res.render('10-0-0/choose_file_to_upload')
+        res.render('10-0-0/choose_period')
       }
   }
     }
