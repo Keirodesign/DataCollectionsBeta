@@ -1,0 +1,54 @@
+
+{% extends "./layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">		
+		<h1 class="govuk-heading-xl">Submission history</h1>
+             
+       <p>Last 30 days submissions.</p>
+        <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Type</th>
+      <th class="govuk-table__header" scope="col">File</th>
+      <th class="govuk-table__header" scope="col">Period</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">30 October 2018</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a></td>
+        <td class="govuk-table__cell">R03</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">31 October 2018</th>
+        <td class="govuk-table__cell">ESF</td>
+        <td class="govuk-table__cell"><a href="#">SUPPDATA-12345678-ESF-8976-20180806-151209.CSV</a></td>
+        <td class="govuk-table__cell">R03</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">24 October 2018</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-01.XML</a></td>
+        <td class="govuk-table__cell">R14</td>
+    </tr>
+  </tbody>
+</table>
+      <p><a href="./what_data_do_you_want_to_submit.html">Submit another data return</a></p>     
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_reports.html" %}
+      </div>
+</div>
+
+{% endblock %}

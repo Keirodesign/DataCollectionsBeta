@@ -1,0 +1,41 @@
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        
+        		<div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+  <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
+    Your file’s uploading
+  </h2>
+  <div class="govuk-highlight-summary__body">
+	  <p>ILR-12345678-1819-20180806-151209-02.XML</p>      
+	  <p>90% uploaded</p>
+   <p><progress value="90" max="100"></progress></p>
+	  <p><a href="./choose_file_to_upload.html">Cancel</a></p>
+  </div>
+</div>
+        
+        <script type="text/javascript">   
+    function Redirect() 
+    {  
+        window.location="./ilr_data_submitted_closed.html"; 
+    } 
+    setTimeout('Redirect()', 3000);   
+</script>
+  
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+
+</div>
+
+{% endblock %}
