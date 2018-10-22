@@ -298,7 +298,21 @@ router.get('/9-3-7/eas_month_view', function (req, res) {
   res.render('9-3-7/eas_month_view', { 'monthselected': easmonthselected})
 })
 
+// --------------------------  Iteration 9-3-8  -------------------------------------------------------------- 
 
+router.get('/9-3-8/choose_file_to_upload', function (req, res) {
+  // Get the answer from the query string (eg. ?whattosubmit=ilr)
+  var whattosubmit = req.query.whattosubmit
+  if (whattosubmit === 'esf') {
+    res.redirect('esf_choose_file_to_upload')
+  } else {
+      if (whattosubmit === 'eas') {
+        res.redirect('eas_choose_file_to_upload')
+      } else {
+        res.render('9-3-8/choose_file_to_upload')
+      }
+  } 
+})
 
 
 
