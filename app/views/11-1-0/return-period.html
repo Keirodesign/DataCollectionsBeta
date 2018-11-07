@@ -1,0 +1,87 @@
+
+{% extends "./layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+ <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Reports <span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
+        <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+      
+  
+      <h2 class="govuk-heading-l"><span class="govuk-caption-l">Year to date funding</span>£30,6758</h2>
+     
+  </div>
+       
+    <div class="govuk-grid-column-one-half">
+  
+        <h2 class="govuk-heading-l"><span class="govuk-caption-l">Learners</span>3,450</h2>
+       
+  </div>
+        </div>
+ <p>If you need to correct the data you've submitted, <a href="choose_file_to_upload.html">submit another file</a>.</p> 
+
+      
+
+   
+        
+       <h2 class="govuk-heading-l" id="submission">Submission history</h2>
+        <p>Each time you submit a new file your reports will be updated. To view your latest reports you should download the reports for your most recent submission.</p>
+             
+              <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+        <!--<th class="govuk-table__header" scope="col">Type</th>-->
+      <th class="govuk-table__header" scope="col">File</th>
+       <!--<th class="govuk-table__header" scope="col">Reference</th>-->
+    <th class="govuk-table__header" scope="col">Reports</th>
+    
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">30 October 2018</th>
+        <!--<td class="govuk-table__cell">ILR</td>-->
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a></td>
+         <!--<td class="govuk-table__cell">300</td>-->
+        <td class="govuk-table__cell">Processing</td>
+    
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">28 October 2018</th>
+        <!--<td class="govuk-table__cell">ESF</td>-->
+        <td class="govuk-table__cell"><a href="#">SUPPDATA-12345678-ESF-8976-20180806-151209.CSV</a></td>
+         <!--<td class="govuk-table__cell">295</td>-->
+        <td class="govuk-table__cell"><a href="#">REPORTS-281018-01.ZIP</a></td>
+        
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">24 October 2018</th>
+       <!--<td class="govuk-table__cell">ILR</td>-->
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-01.XML</a></td>
+         <!--<td class="govuk-table__cell">200</td>-->
+        <td class="govuk-table__cell"><a href="#">REPORTS-241018-02.ZIP</a></td>
+
+    </tr>
+  </tbody>
+</table>
+                
+
+         
+			
+       
+     </div>
+	 <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}
