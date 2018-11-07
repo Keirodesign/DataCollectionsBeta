@@ -1,4 +1,3 @@
-
 {% extends "./layout.html" %}
 
 {% block beforeContent %}
@@ -14,33 +13,23 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-
-    	<div class="govuk-error-summary" aria-labelledby="error-summary-title" data-module="error-summary">
-		  <h2 class="govuk-error-summary__title" id="error-summary-title">
-		    ILR file not submitted
-		  </h2>
-		  <div class="govuk-error-summary__body">
-		    <ul class="govuk-list govuk-error-summary__list">
-		      <li>
-		        <p>There are errors and warnings for the learner data in your file.</p>
-		      </li>
-		    </ul>
-		  </div>
-		</div>
+    
 	
 		<h1 class="govuk-heading-xl">Problems with the data<span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
-
-		<p id="error"><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893</p>
-
-		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 15 (affecting 14 learners) <!--<a href="#">Find out more</a>--></p>
-
-		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 2,291 (affecting 1,027 learners) <!--<a href="#">Find out more</a>--></p>		
-		<p><a href="#">Download detailed report </a> (CSV, 78KB) showing all errors and warnings</p>      
-      
         
-       <!--<p><a href="#">Download Apprenticeship Data Match report </a> (CSV, 375KB)</p>-->
+        <div class="govuk-inset-text">
+            <p>ILR file not submitted. There are errors, warnings and data match problems for the learner data in your file.</p>
+            
+</div> 
+		<p><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893</p>
 
-		<div class="govuk-warning-text">
+		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 15 (affecting 14 learners)</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 2,291 (affecting 1,027 learners)</p>	
+        
+		<p><a href="#">Download detailed report </a> (CSV, 78KB) showing all errors and warnings</p> 
+        
+            	<div class="govuk-warning-text">
 		  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
 		  <strong class="govuk-warning-text__text">
 		    <span class="govuk-warning-text__assistive">Warning</span>
@@ -51,8 +40,9 @@
 		<a href="./ilr_data_submitted.html" type="submit" class="govuk-button">
 	      Submit anyway
 	    </a>
+          <p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>  
 
-		<p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>
+		
     </div>
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}
