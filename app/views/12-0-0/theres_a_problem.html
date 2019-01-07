@@ -15,33 +15,66 @@
     <div class="govuk-grid-column-two-thirds">
 
 
-		<h1 class="govuk-heading-xl">ILR file not submitted<span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
+		<h1 class="govuk-heading-xl">Check errors before submitting your ILR file<span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
 
-    
-		<p><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893</p>
 
-		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 15 (affecting 14 learners)</p>
+		<p><span class="govuk-!-font-weight-bold">Learners in file</span>: 3,893</p>
 
-		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 2,291 (affecting 1,027 learners)</p>
+		<p><span class="govuk-!-font-weight-bold">Errors in file</span>: 15 (affecting 14 learners)</p>
 
-		<p><a href="#">Download detailed report </a> (CSV, 78KB) showing all errors and warnings</p>
+		<p><span class="govuk-!-font-weight-bold">Warnings in file</span>: 2,291 (affecting 1,027 learners)</p>
+
+		<p>Use the report below to fix the errors in your file.
+<a href="#">Errors and warnings report</a> (CSV, 78KB)</p>
 
 
 
     {% from "warning-text/macro.njk" import govukWarningText %}
 
     {{ govukWarningText({
-      text: "There are errors and warnings for the learner data in your file. You’ll only be paid for learners that do not have errors in their data.",
+      text: "You’ll only be paid for learners that do not have errors in their data",
       iconFallbackText: "Warning"
     }) }}
 
-		<a href="./ilr_data_submitted.html" type="submit" class="govuk-button">
-	      Submit anyway
-	    </a>
-          <p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>
+    <!-- <p><a href="./ilr_data_submitted.html" >Submit this file anyway</a> <br>You may want to do this if errors are happening because of a known issue.</p>
 
+    <a href="./choose_file_to_upload.html" type="submit" class="govuk-button">Upload an updated file</a> -->
+
+    <form action="choose_file_to_upload" method="get" class="form">
+			<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h3 class="govuk-heading-m">
+         What do you want to do?
+      </h3>
+    </legend>
+    <div class="govuk-radios">
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="fix-errors" name="errorsindata" type="radio" value="fix errors and submit a new file">
+        <label class="govuk-label govuk-radios__label" for="fix-errors">
+        Fix errors and submit a new file
+      </label>
+      </div>
+      <!-- <div class="govuk-radios__divider">or</div> -->
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="submit-file" name="errorsindata" type="radio" value="submit this file anyyway">
+        <label class="govuk-label govuk-radios__label" for="submit-file">
+        Submit this file anyway (You may want to do this if your errors are happening because of a known issue.)
+      </label>
+      </div>
+      </div>
+  </fieldset>
+			</div>
+<button class="govuk-button">
+  Continue
+</button>
+
+		</form>
 
     </div>
+
+
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}
       </div>
