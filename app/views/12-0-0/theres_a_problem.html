@@ -14,6 +14,20 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-error-summary hide" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          Select an option to continue
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#select-something">Tell us what you'd like to do next</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
 
 		<h1 class="govuk-heading-xl">Review errors before submitting your ILR file<span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
 
@@ -41,12 +55,15 @@
     <a href="./choose_file_to_upload.html" type="submit" class="govuk-button">Upload an updated file</a> -->
 
     <form action="choose_file_to_upload" method="get" class="form">
-			<div class="govuk-form-group">
+			<div id="formError" class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h3 class="govuk-heading-m">
          What do you want to do?
       </h3>
+      <span class="govuk-error-message hide">
+       Choose an option below
+     </span>
     </legend>
     <div class="govuk-radios">
 
