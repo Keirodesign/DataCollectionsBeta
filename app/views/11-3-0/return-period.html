@@ -9,10 +9,17 @@
 {% block content %}
 
  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
         <h1 class="govuk-heading-xl">Reports</h1>
 
- <p>To correct data you’ve already submitted, <a href="what_data_do_you_want_to_submit.html">submit another file</a>.</p>
+        <!-- <h2 class="govuk-heading-m" id="subsection-title">
+          Help and support
+        </h2> -->
+        <h3 class="govuk-heading-s">ESFA support desk</h3>
+        <p>For help and support call us on 0370 267 0001, Monday to Thursday, 8:30am-5pm,<br> or Fridays, 8.30am-4pm. Or email us at
+          <a href="sde.servicedesk@education.gov.uk">sde.servicedesk@education.gov.uk</a></p>
+
+ <p>For new submissions or to correct the data you've already submitted, <a href="what_data_do_you_want_to_submit.html">submit another file</a>.</p>
 
  <div class="govuk-tabs" data-module="tabs">
   <h2 class="govuk-tabs__title">
@@ -22,117 +29,73 @@
   <ul class="govuk-tabs__list">
     <li class="govuk-tabs__list-item">
       <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
-        Current submissions
+        Submission history
       </a>
     </li>
     <li class="govuk-tabs__list-item">
       <a class="govuk-tabs__tab" href="#past-week">
-        Past submissions
+        Reports history
       </a>
     </li>
 
   </ul>
 
   <section class="govuk-tabs__panel" id="past-day">
-    <h2 class="govuk-heading-l" id="submission">Current submissions</h2>
-      <p>Find all the files submitted on your account and their reports below. For final reports, see the ‘Past submissions’ tab.</p>
+    <h2 class="govuk-heading-l" id="submission">Submission history  <span class="govuk-caption-l">RO2</span></h2>
+<p>Each time you submit a new file your reports will be updated. To view your latest<br> reports you should download the reports for your most recent submission.</p>
 
-      <h3 class="govuk-heading-m">2018/19 submissions</h3>
-      <!-- <span class="govuk-caption-l">RO3</span>
-      <p class="">You haven’t submitted any files for this submission period yet. <a href="#" >Submit a file</a></p> -->
+      <h3 class="govuk-heading-m">Submissions for 2018 to 2019</h3>
 
-      <span class="govuk-caption-l">RO2</span>
+              <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Type</th>
+      <th class="govuk-table__header" scope="col">File</th>
+         <th class="govuk-table__header" scope="col">Submitted by</th>
+        <th class="govuk-table__header" scope="col">Reference</th>
+    <th class="govuk-table__header" scope="col">Reports</th>
 
-      <strong>30 October 2018 at 1:00pm  <span>ILR submission Ref:</span> 300</strong>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">30 October 2018 at 1:00pm</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">300</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
 
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">30 October 2018 at 8:00am</th>
+        <td class="govuk-table__cell">ESF</td>
+        <td class="govuk-table__cell"><a href="#">SUPPDATA-12345678-ESF-8976-20180806-151209.CSV</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">295</td>
+        <td class="govuk-table__cell">Failed</td>
 
-          <p><strong>Submitted file by Bob Afett:</strong><br>
-          ILR-12345678-1819-20180806-05092018-02.XML<p>
-      
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">24 October 2018 at 1:00pm</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-01.XML</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">200</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
 
-
-      <div>
-      <p><a href="#" title="Download REPORTS-0312210-091400.zip">Error reports</a> <span class="govuk-body-s">(CSV, 78KB)</span></p>
-      <p><a href="#" title="Download REPORTS-0312210-091400.zip">Data match reports</a> <span class="govuk-body-s">(CSV, 56KB)</span></p>
-      <p><a href="#" title="Download REPORTS-0312210-091400.zip">Submitted file</a> <span class="govuk-body-s">(XML, 78KB)</span></p>
-      </div>
-<hr>
-
-      <p><strong>30 October 2018 at 1:00pm  <span>ILR submission</span></strong></p>
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-
-          <p><strong>Ref:</strong> 300</p>
-          <p><strong>Submitted file by Bob Afett:</strong><br>
-          ILR-12345678-1819-20180806-05092018-02.XML<p>
-
-        </div>
-
-        <div class="govuk-grid-column-one-half">
-            <!-- <strong>Download:</strong> -->
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Error reports</a> (CSV, 78KB)</p>
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Data match reports</a> (CSV, 56KB)</p>
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Submitted file</a> (XML, 78KB)</p>
-        </div>
-      </div>
-<hr>
-      <p class="govuk-heading-s">30 October 2018 at 8:00am (ESF submission)</p>
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-          <p><strong>Ref:</strong> 295<br>
-          <strong>Submitted file:</strong> ILR-12345678-1819-20180806-05092018-02.CSV<p>
-          <p><strong>Submitted by:</strong> Bob Afett</p>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <strong>Download:</strong>
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Error reports</a> (CSV, 78KB)</p>
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Data match reports</a> (CSV, 56KB)</p>
-            <p><a href="#" title="Download REPORTS-0312210-091400.zip">Submitted file</a> (XML, 78KB)</p>
-        </div>
-
-      </div>
-<hr>
-      <p class="govuk-heading-s">24 October 2018 at 1:00pm (ILR submission)</p>
-      <p class=""><strong>Your reports</strong><br>
-      <a href="#" title="Download REPORTS-0312210-091400.zip">Errors and warnings report</a> (CSV, 78KB)<br>
-      <a href="#" title="Download REPORTS-0312210-091400.zip">Data match report</a> (CSV, 56KB)</p>
-      <p><strong>Ref:</strong> 200<br>
-      <strong>Submitted file:</strong> <a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a><br>
-      <strong>Submitted by:</strong> Bob Afett</p>
-<hr>
-      <h3 class="govuk-heading-m">Older submissions</h3>
-
-      <p class="govuk-heading-s">14 July 2018 at 1:00pm (ILR submission)</p>
-      <p class=""><strong>Your reports</strong><br>
-      <a href="#" title="Download REPORTS-0312210-091400.zip">Errors and warnings report</a> (CSV, 78KB)<br>
-      <a href="#" title="Download REPORTS-0312210-091400.zip">Data match report</a> (CSV, 56KB)</p>
-      <p><strong>Ref:</strong> 195<br>
-      <strong>Submitted file:</strong> <a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a><br>
-      <strong>Submitted by:</strong> Bob Afett</p>
-<hr>
-      <p class="govuk-heading-s">18 June 2018 at 8:00am (ESF submission)</p>
-      <p class=""><strong>Your reports</strong><br>
-        <a href="#" title="Download REPORTS-0312210-091400.zip">Errors and warnings report</a> (CSV, 78KB)<br>
-        <a href="#" title="Download REPORTS-0312210-091400.zip">Data match report</a> (CSV, 56KB)</p>
-      <p><strong>Ref:</strong> 125<br>
-      <strong>Submitted file:</strong> <a href="#">ILR-12345678-1819-20180806-05092018-02.CSV</a><br>
-      <strong>Submitted by:</strong> Bob Afett</p>
-<hr>
-
-      <p class="govuk-heading-s">19 May 2018 at 1:00pm (ILR submission)</p>
-      <p class=""><strong>Your reports</strong><br>
-        <a href="#" title="Download REPORTS-0312210-091400.zip">Errors and warnings report</a> (CSV, 78KB)<br>
-        <a href="#" title="Download REPORTS-0312210-091400.zip">Data match report</a> (CSV, 56KB)</p>
-      <p><strong>Ref:</strong> 100<br>
-      <strong>Submitted file:</strong> <a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a><br>
-      <strong>Submitted by:</strong> Bob Afett</p>
-<hr>
-</section>
+    </tr>
+  </tbody>
+</table>
 
 
+
+
+  </section>
   <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-    <h2 class="govuk-heading-l" id="reports">Past submissions</h2>
+    <h2 class="govuk-heading-l" id="reports">Reports history</h2>
         <p>The reports download includes the last validation report and submission files. You can <a href="#">view period end reports</a> in the Hub.</p>
         <h3 class="govuk-heading-m">Academic year 2018 to 2019</h3>
 
@@ -148,7 +111,7 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">R01</th>
-        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a> (Zip, 1.3MB)</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download REPORTS-0312210-091400.zip</a>  (Zip, 1.3MB)</td>
     </tr>
   </tbody>
 </table>
@@ -258,10 +221,8 @@
 
 
 
-     </div>
-	 <div class="govuk-grid-column-one-third">
-        {% include "./includes/sidebar_help.html" %}
-      </div>
+</div>
+
 </div>
 
 {% endblock %}
