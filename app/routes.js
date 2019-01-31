@@ -521,7 +521,28 @@ router.get('/11-3-0/choose_file_to_upload', function (req, res) {
       if (whattosubmit === 'eas') {
         res.redirect('eas_choose_file_to_upload')
       } else {
-        res.render('11-2-0/choose_file_to_upload')
+        res.render('11-3-0/choose_file_to_upload')
+      }
+  }
+    }
+})
+
+// --------------------------  Iteration 11-4-0  --------------------------------------------------------------
+
+router.get('/11-4-0/choose_file_to_upload', function (req, res) {
+  // Get the answer from the query string (eg. ?whattosubmit=ilr)
+  var whattosubmit = req.query.whattosubmit
+  if (whattosubmit === 'reports') {
+        res.redirect('return-period')
+      }
+    else {
+  if (whattosubmit === 'esf') {
+    res.redirect('esf_choose_file_to_upload')
+  } else {
+      if (whattosubmit === 'eas') {
+        res.redirect('eas_choose_file_to_upload')
+      } else {
+        res.render('11-4-0/choose_file_to_upload')
       }
   }
     }

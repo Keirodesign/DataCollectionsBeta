@@ -17,7 +17,26 @@ $(document).ready(function () {
 function goBack() {
     window.history.back();
 }
-    
 
-      
 
+$("#typeFilter :checkbox").click(function() {
+    $("#submissions tr").hide();
+    $("#typeFilter :checkbox:checked").each(function() {
+        $("." + $(this).val()).show();
+    });
+
+    if (!$("#typeFilter :checkbox").is(':checked')) {
+      $("#submissions tr").show();
+    }
+});
+
+$("#yearFilter :checkbox").click(function() {
+    $(".year-groups").hide();
+    $("#yearFilter :checkbox:checked").each(function() {
+        $("." + $(this).val()).show();
+    });
+
+    if (!$("#yearFilter :checkbox").is(':checked')) {
+      $(".year-groups").show();
+    }
+});

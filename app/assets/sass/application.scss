@@ -326,3 +326,13 @@ progress::-moz-progress-bar { background: white; }
 .hide {
   display: none;
 }
+
+
+#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes {
+	display: flex;
+
+	.govuk-checkboxes__item {
+		margin-right: 20px;
+	}
+
+}
