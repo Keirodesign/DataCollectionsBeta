@@ -40,3 +40,7 @@ $("#yearFilter :checkbox").click(function() {
       $(".year-groups").show();
     }
 });
+
+$('.no-thank-you').click(function(){
+  $('.feedback-wrapper').hide();
+});

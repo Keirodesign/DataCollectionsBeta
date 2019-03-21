@@ -30,17 +30,20 @@
   Data Collections Transformation Prototype
 {% endblock %}
 
+
 {% block header %}
   {% include "includes/cookie-banner.html" %}
-
   {# Set serviceName in config.js. #}
   {{ govukHeader({
     homepageUrl: "/",
     serviceName: serviceName,
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
-  }) }}
+  })}}
+    {% include "includes/feedback-banner.html" %}
 {% endblock %}
+
+
 
 {% block beforeContent %}
 
@@ -50,7 +53,8 @@
   },
   html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
-<a href="#" onclick="goBack()" class="govuk-back-link">Back</a>
+{% include "./includes/account_info.html" %}
+
 {% endblock %}
 
 {% if useAutoStoreData %}
@@ -69,6 +73,7 @@
 {% endif %}
 
 {% block bodyEnd %}
+{% include "./includes/version.html" %}
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block pageScripts %}{% endblock %}
