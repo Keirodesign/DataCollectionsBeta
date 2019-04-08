@@ -30,6 +30,7 @@
   Data Collections Transformation Prototype
 {% endblock %}
 
+
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
@@ -38,16 +39,21 @@
     serviceName: serviceName,
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
-  }) }}
+  })}}
+    {% include "includes/feedback-banner.html" %}
 {% endblock %}
 
+
+
 {% block beforeContent %}
+
 {{ govukPhaseBanner({
   tag: {
     text: "prototype"
   },
   html: 'This is a new service – your <a class="govuk-link" target="blank" href="https://www.smartsurvey.co.uk/s/dct-beta-feedback/">feedback</a> will help us to improve it.'
 }) }}
+{% include "./includes/account_info.html" %}
 
 {% endblock %}
 
@@ -67,7 +73,7 @@
 {% endif %}
 
 {% block bodyEnd %}
-
+{% include "./includes/version.html" %}
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block pageScripts %}{% endblock %}

@@ -44,3 +44,13 @@ $("#yearFilter :checkbox").click(function() {
 $('.no-thank-you').click(function(){
   $('.feedback-wrapper').hide();
 });
+
+
+$('#continue').click(function() {
+
+   if($('#what-to-submit-1').is(':checked')) { location.href='choose_period'; }
+   if($('#what-to-submit-2').is(':checked')) { location.href='eas_choose_file_to_upload'; }
+	 if($('#what-to-submit-3').is(':checked')) { location.href='choose_esf'; }
+   else if($('#what-to-submit-4').is(':checked')) { location.href='return-period'; }
+
+});
